@@ -21,7 +21,7 @@ describe("sorter test", () => {
 
             const unformatted = util.unformattedContent(content);
             const result = sortAttributes(unformatted, {
-                strategy: "alphabetical",
+                order: "alphabetical",
             });
             const expected = util.formattedContent(content);
 

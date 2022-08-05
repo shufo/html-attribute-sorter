@@ -30,7 +30,7 @@ console.log(sorted);
 const sorted = sortAttributes(
   `<img src="foo" alt="title" class="img b-30" id="img_10">`,
   {
-    strategy: "alphabetical",
+    order: "alphabetical",
   }
 );
 console.log(sorted);
@@ -40,7 +40,7 @@ console.log(sorted);
 const sorted = sortAttributes(
   `<img src="foo" alt="title" class="img b-30" id="img_10">`,
   {
-    strategy: "idiomatic",
+    order: "idiomatic",
   }
 );
 console.log(sorted);
@@ -50,7 +50,7 @@ console.log(sorted);
 const sorted = sortAttributes(
   `<img src="foo" alt="title" class="img b-30" id="img_10">`,
   {
-    strategy: "code_guide",
+    order: "code_guide",
   }
 );
 console.log(sorted);
@@ -71,13 +71,13 @@ console.log(sorted);
 
 ```typescript
 export interface ISortOption {
-  strategy: string;
+  order: string;
 }
 ```
 
-| key      | value                                                                                                             |
-| -------- | ----------------------------------------------------------------------------------------------------------------- |
-| strategy | A strategy to sort attributes. You can specify `alphabetical`, `code_guide` or `idiomatic`. default: `code_guide` |
+| key   | value                                                                                                             |
+| ----- | ----------------------------------------------------------------------------------------------------------------- |
+| order | An order to sort attributes. You can specify `alphabetical`, `code_guide` or `idiomatic`. default: `code_guide` |
 
 ## Testing
 

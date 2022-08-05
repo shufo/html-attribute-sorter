@@ -20,7 +20,7 @@ describe("strategy test", () => {
 
             const unformatted = util.unformattedContent(content);
             const result = sortAttributes(unformatted, {
-                strategy: "code_guide",
+                order: "code_guide",
             });
 
             const expected = util.formattedContent(content);
@@ -45,7 +45,7 @@ describe("strategy test", () => {
 
             const unformatted = util.unformattedContent(content);
             const result = sortAttributes(unformatted, {
-                strategy: "idiomatic",
+                order: "idiomatic",
             });
             console.log(result);
 

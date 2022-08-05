@@ -9,7 +9,7 @@ const attrs: Array<string> = [];
 
 export function sortAttributes(
     html: string,
-    options: ISortOption = { strategy: "code_guide" }
+    options: ISortOption = { order: "code_guide" }
 ) {
     const replaced = html.replace(
         /<[-:.\w\d]+\s+([-:.\w\d]+)=("[^"]*"|'[^']*'|[^"'])*?>/g,
@@ -60,7 +60,7 @@ function restoreAttributes(content: string, options: ISortOption) {
 }
 
 function _sortAttributes(content: string, options: ISortOption): string {
-    const strategy = getSortStrategy(options.strategy);
+    const strategy = getSortStrategy(options.order);
     const sorter = new Sorter(strategy);
 
     return content.replace(/(?<=<[-:.\w\d]+\s)[^>]*?(?=\/?>)/g, (match) => {
