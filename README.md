@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/v/html-attribute-sorter)](https://www.npmjs.com/package/html-attribute-sorter)
+[![CI](https://github.com/shufo/html-attribute-sorter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/shufo/html-attribute-sorter/actions/workflows/test.yml)
+
 # html-attribute-sorter
 
 An html attribute sorter.
@@ -71,6 +74,7 @@ $ yarn run benchmark
 ```
 
 ![image](https://user-images.githubusercontent.com/1641039/182972283-3d7e48bf-3f8b-40b1-92c0-334a1e2fba3e.png)
+
 ## Contributing
 
 1.  Fork it
