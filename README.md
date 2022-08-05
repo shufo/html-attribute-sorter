@@ -22,20 +22,39 @@ const { sortAttributes } = require("html-attribute-sorter");
 
 // pass html tags that includes attributes
 // default: code guide order
-sortAttributes(`<img src="foo" class="img b-30" id="img_10">`);
+const sorted = sortAttributes(`<img src="foo" class="img b-30" id="img_10">`);
+console.log(sorted);
 // => <img class="img b-30" id="img_10" src="foo">
 
 // alphabetical order
-sortAttributes(`<img src="foo" alt="title" class="img b-30" id="img_10">`, {
-  strategy: "alphabetical",
-});
+const sorted = sortAttributes(
+  `<img src="foo" alt="title" class="img b-30" id="img_10">`,
+  {
+    strategy: "alphabetical",
+  }
+);
+console.log(sorted);
 // => <img alt="title" class="img b-30" id="img_10" src="foo">
 
 // idiomatic order
-sortAttributes(`<img src="foo" alt="title" class="img b-30" id="img_10">`, {
-  strategy: "idiomatic",
-});
+const sorted = sortAttributes(
+  `<img src="foo" alt="title" class="img b-30" id="img_10">`,
+  {
+    strategy: "idiomatic",
+  }
+);
+console.log(sorted);
 // => <img class="img b-30" id="img_10" alt="title" src="foo">
+
+// code guide order
+const sorted = sortAttributes(
+  `<img src="foo" alt="title" class="img b-30" id="img_10">`,
+  {
+    strategy: "code_guide",
+  }
+);
+console.log(sorted);
+// => <img class="img b-30" id="img_10" src="foo">
 ```
 
 ## API
