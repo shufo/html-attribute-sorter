@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/shufo/html-attribute-sorter/compare/v0.1.0...v0.2.0) (2022-08-05)
+
+
+### Features
+
+* 🎸 change name of option parameter ([5b5951b](https://www.github.com/shufo/html-attribute-sorter/commit/5b5951bb3b0c8e761fd5de2a7e898e6cc480711b))
+
 ## 0.1.0 (2022-08-05)
 
 
