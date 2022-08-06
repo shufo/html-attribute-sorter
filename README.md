@@ -1,5 +1,6 @@
 [![npm](https://img.shields.io/npm/v/html-attribute-sorter)](https://www.npmjs.com/package/html-attribute-sorter)
 [![CI](https://github.com/shufo/html-attribute-sorter/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/shufo/html-attribute-sorter/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/shufo/html-attribute-sorter/branch/main/graph/badge.svg?token=U7YzstHupS)](https://codecov.io/gh/shufo/html-attribute-sorter)
 
 # html-attribute-sorter
 
