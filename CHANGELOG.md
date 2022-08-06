@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.2](https://github.com/shufo/html-attribute-sorter/compare/v0.3.1...v0.3.2) (2022-08-06)
+
+
+### Fixes
+
+* 🐛 do not sort remaining attributes other than spec ([d46daa1](https://github.com/shufo/html-attribute-sorter/commit/d46daa19ef44f0dc7e690d8d7ea4583e32a44b17))
+
+
+### Miscellaneous
+
+* **deps:** update peter-evans/commit-comment action to v2 ([5a00b31](https://github.com/shufo/html-attribute-sorter/commit/5a00b31fe87d6d6fe7fc2829e4a3b7187e246a17))
+
 ## [0.3.1](https://github.com/shufo/html-attribute-sorter/compare/v0.3.0...v0.3.1) (2022-08-06)
 
 
