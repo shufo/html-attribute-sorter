@@ -14,6 +14,7 @@ export class VuejsStrategy implements SortStrategy {
     private UNIQUE = ['ref', 'key'];
     private SLOT = ['v-slot', 'slot'];
     private TWO_WAY_BINDING = ['v-model'];
+    // eslint-disable-next-line
     private OTHER_DIRECTIVES = ['v-[-:\w\d]+'];
     private EVENTS = ['@click', 'v-on='];
     private CONTENT = ['v-text', 'v-html'];
