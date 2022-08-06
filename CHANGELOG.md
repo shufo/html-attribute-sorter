@@ -1,5 +1,20 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/shufo/html-attribute-sorter/compare/v0.2.0...v0.2.1) (2022-08-06)
+
+
+### Fixes
+
+* 🐛 regex does not match specific tag ([6d94431](https://www.github.com/shufo/html-attribute-sorter/commit/6d944314fb2c68950527ed8a7992c15e98b0dfc5))
+
+
+### Miscellaneous
+
+* **deps:** update actions/cache action to v3 ([094a395](https://www.github.com/shufo/html-attribute-sorter/commit/094a395bcdf5137efed4971449aac3973c688fb0))
+* **deps:** update actions/checkout action to v3 ([b109c93](https://www.github.com/shufo/html-attribute-sorter/commit/b109c93259e443f8bb916418b3488f5096d73c86))
+* **deps:** update actions/setup-node action to v3 ([0ca780e](https://www.github.com/shufo/html-attribute-sorter/commit/0ca780ecd9c04d7f78673d95f01d6d49c08ae275))
+* **deps:** update codecov/codecov-action action to v3 ([38b87de](https://www.github.com/shufo/html-attribute-sorter/commit/38b87deb8630302fedbeb5e384cdf22b3a97e730))
+
 ## [0.2.0](https://www.github.com/shufo/html-attribute-sorter/compare/v0.1.0...v0.2.0) (2022-08-05)
 
 
