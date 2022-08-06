@@ -37,8 +37,7 @@ export class CodeGuideStrategy implements SortStrategy {
         });
 
         const remainings = attributes
-            .filter((attr) => sorted.indexOf(attr) === -1)
-            .sort();
+            .filter((attr) => sorted.indexOf(attr) === -1);
 
         return sorted.concat(remainings);
     }
