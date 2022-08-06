@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/shufo/html-attribute-sorter/compare/v0.2.1...v0.3.0) (2022-08-06)
+
+
+### Features
+
+* 🎸 add vuejs sorting strategy ([3d4219f](https://www.github.com/shufo/html-attribute-sorter/commit/3d4219f9ae26b83714b4ac43ad6c24eed7b8e412))
+
+
+### Fixes
+
+* 🐛 unexpected custom directive position for vuejs order ([c40d0ad](https://www.github.com/shufo/html-attribute-sorter/commit/c40d0ad1c9ffe9d21886406727fd2edd7e5e2c68))
+
 ### [0.2.1](https://www.github.com/shufo/html-attribute-sorter/compare/v0.2.0...v0.2.1) (2022-08-06)
 
 
