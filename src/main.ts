@@ -84,5 +84,7 @@ function getSortStrategy(strategy: Strategy) {
             return new VuejsStrategy();
     }
 
-    throw new Error(`You can specify only [alphabetical|code_guide|idiomatic|vuejs] for sorting order`);
+    throw new Error(
+        `You can specify only [alphabetical|code_guide|idiomatic|vuejs] for sorting order`
+    );
 }
