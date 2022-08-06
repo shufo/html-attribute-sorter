@@ -13,8 +13,7 @@ export class VuejsStrategy implements SortStrategy {
     private UNIQUE = ["ref", "key"];
     private SLOT = ["v-slot", "slot"];
     private TWO_WAY_BINDING = ["v-model"];
-    // eslint-disable-next-line
-    private OTHER_DIRECTIVES = ["v-[-:wd]+"];
+    private OTHER_DIRECTIVES = /v-[-:\w\d]+/g;
     private EVENTS = ["@click", "v-on="];
     private CONTENT = ["v-text", "v-html"];
 
@@ -27,7 +26,6 @@ export class VuejsStrategy implements SortStrategy {
         ...this.UNIQUE,
         ...this.SLOT,
         ...this.TWO_WAY_BINDING,
-        ...this.OTHER_DIRECTIVES,
     ];
 
     private tailOrderedAttrsRegex = [...this.EVENTS, ...this.CONTENT];
@@ -56,6 +54,15 @@ export class VuejsStrategy implements SortStrategy {
             .filter((attr) => head.indexOf(attr) === -1)
             .filter((attr) => tail.indexOf(attr) === -1);
 
-        return head.concat(remainings).concat(tail);
+        const customDirectives: string[] =
+            remainings.filter((attr) => this.OTHER_DIRECTIVES.test(attr));
+
+        const remainingsWithoutCustomDirective = remainings
+            .filter((attr) => customDirectives.indexOf(attr) === -1);
+
+        return head
+            .concat(customDirectives)
+            .concat(remainingsWithoutCustomDirective)
+            .concat(tail);
     }
 }
