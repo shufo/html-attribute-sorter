@@ -43,7 +43,7 @@ jobs:
           echo ::set-output name=body::$body
 
       - name: Create commit comment
-        uses: peter-evans/commit-comment@v1
+        uses: peter-evans/commit-comment@v2
         if: github.event_name == 'push'
         with:
           body: ${{ steps.benchmark.outputs.body }}
