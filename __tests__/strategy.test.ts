@@ -47,7 +47,31 @@ describe("strategy test", () => {
             const result = sortAttributes(unformatted, {
                 order: "idiomatic",
             });
-            console.log(result);
+
+            const expected = util.formattedContent(content);
+
+            expect(result).toEqual(expected);
+        });
+    });
+
+    test("vuejs", () => {
+        const fixturesDir = path.resolve(__dirname, "fixtures", "vuejs");
+        const fixtureDirEntries = fs.readdirSync(fixturesDir, {
+            withFileTypes: true,
+        });
+        const fixtures = fixtureDirEntries
+            .filter((entry) => entry.isFile())
+            .map((entry) => entry.name);
+
+        fixtures.forEach((fixture) => {
+            const content = fs
+                .readFileSync(path.resolve(fixturesDir, fixture))
+                .toString("utf-8");
+
+            const unformatted = util.unformattedContent(content);
+            const result = sortAttributes(unformatted, {
+                order: "vuejs",
+            });
 
             const expected = util.formattedContent(content);
 

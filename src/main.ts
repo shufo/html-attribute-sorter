@@ -3,6 +3,7 @@ import { Sorter } from "./sorter";
 import { AlphabeticalStrategy } from "./strategy/alphabetical";
 import { CodeGuideStrategy } from "./strategy/code_guide";
 import { IdiomaticStrategy } from "./strategy/idiomatic";
+import { VuejsStrategy } from "./strategy/vuejs";
 
 const maps: Array<string> = [];
 const attrs: Array<string> = [];
@@ -79,5 +80,9 @@ function getSortStrategy(strategy: Strategy) {
             return new CodeGuideStrategy();
         case "idiomatic":
             return new IdiomaticStrategy();
+        case "vuejs":
+            return new VuejsStrategy();
     }
+
+    throw new Error(`You can specify only [alphabetical|code_guide|idiomatic|vuejs] for sorting order`);
 }
