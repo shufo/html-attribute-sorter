@@ -12,18 +12,18 @@ export function sortAttributes(
     options: ISortOption = { order: "code_guide" }
 ) {
     const replaced = html.replace(
-        /<[-:.\w\d]+\s+([-:.\w\d]+)=("[^"]*"|'[^']*'|[^"'])*?>/g,
-        (match: string, p1: string) => {
-            return storeTags(p1, match);
+        /<(?!\/)(?:"[^"]*"|'[^']*'|[^"'])*?>/g,
+        (match: string) => {
+            return storeTags(match);
         }
     );
 
     return restoreAttributes(replaced, options);
 }
 
-function storeTags(name: string, value: string) {
+function storeTags(value: string) {
     const index = maps.push(value) - 1;
-    return getTagPlaceholder(name, index.toString());
+    return getTagPlaceholder(index.toString());
 }
 
 function storeAttributes(name: string, value: string) {
@@ -31,7 +31,7 @@ function storeAttributes(name: string, value: string) {
     return getAttributePlaceholder(name, index.toString());
 }
 
-function getTagPlaceholder(name, index: string) {
+function getTagPlaceholder(index: string) {
     return `___sort_tags_#___`.replace("#", index);
 }
 
