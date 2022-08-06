@@ -13,7 +13,7 @@ export function sortAttributes(
     options: ISortOption = { order: "code_guide" }
 ) {
     const replaced = html.replace(
-        /<(?!\/)(?:"[^"]*"|'[^']*'|[^"'])*?>/g,
+        /<(?!\/)[-:.\w\d@]+\s(?:"[^"]*"|'[^']*'|[^"'])*?>/g,
         (match: string) => {
             return storeTags(match);
         }
