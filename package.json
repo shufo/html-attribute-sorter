@@ -53,7 +53,7 @@
     "access": "public"
   },
   "lint-staged": {
-    "*.ts": "yarn run fix"
+    "*.ts": "yarn run fix && yarn run format"
   },
   "keywords": [
     "html",
