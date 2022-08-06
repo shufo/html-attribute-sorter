@@ -75,9 +75,9 @@ export interface ISortOption {
 }
 ```
 
-| key   | value                                                                                                                  |
-| ----- | ---------------------------------------------------------------------------------------------------------------------- |
-| order | An order to sort attributes. You can specify `alphabetical`, `code_guide`, `idiomatic`, `vuejs`. default: `code_guide` |
+| key   | value                                                                                                                    |
+| ----- | ------------------------------------------------------------------------------------------------------------------------ |
+| order | An order to sort attributes. You can specify `alphabetical`, `code_guide`, `idiomatic` or `vuejs`. default: `code_guide` |
 
 ## Testing
 
