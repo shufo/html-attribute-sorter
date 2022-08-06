@@ -54,11 +54,13 @@ export class VuejsStrategy implements SortStrategy {
             .filter((attr) => head.indexOf(attr) === -1)
             .filter((attr) => tail.indexOf(attr) === -1);
 
-        const customDirectives: string[] =
-            remainings.filter((attr) => this.OTHER_DIRECTIVES.test(attr));
+        const customDirectives: string[] = remainings.filter((attr) =>
+            this.OTHER_DIRECTIVES.test(attr)
+        );
 
-        const remainingsWithoutCustomDirective = remainings
-            .filter((attr) => customDirectives.indexOf(attr) === -1);
+        const remainingsWithoutCustomDirective = remainings.filter(
+            (attr) => customDirectives.indexOf(attr) === -1
+        );
 
         return head
             .concat(customDirectives)
