@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.1](https://github.com/shufo/html-attribute-sorter/compare/v0.3.0...v0.3.1) (2022-08-06)
+
+
+### Fixes
+
+* 🐛 change parameter value from code_guide to code-guide ([f2b49ad](https://github.com/shufo/html-attribute-sorter/commit/f2b49ad5b320da206f239d7a0a86f8d6b8a06650))
+
+
+### Miscellaneous
+
+* **deps:** update googlecloudplatform/release-please-action action to v3 ([e0a6b9a](https://github.com/shufo/html-attribute-sorter/commit/e0a6b9a8b333add204c7b5530598344cd75e997c))
+* **deps:** update jest monorepo to v28 ([8d1a01b](https://github.com/shufo/html-attribute-sorter/commit/8d1a01b99795df41bfc935156c346dd0f1721721))
+
 ## [0.3.0](https://www.github.com/shufo/html-attribute-sorter/compare/v0.2.1...v0.3.0) (2022-08-06)
 
 
