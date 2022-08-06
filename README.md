@@ -50,7 +50,7 @@ console.log(sorted);
 const sorted = sortAttributes(
   `<img src="foo" alt="title" class="img b-30" id="img_10">`,
   {
-    order: "code_guide",
+    order: "code-guide",
   }
 );
 console.log(sorted);
@@ -77,7 +77,7 @@ export interface ISortOption {
 
 | key   | value                                                                                                                    |
 | ----- | ------------------------------------------------------------------------------------------------------------------------ |
-| order | An order to sort attributes. You can specify `alphabetical`, `code_guide`, `idiomatic` or `vuejs`. default: `code_guide` |
+| order | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic` or `vuejs`. default: `code-guide` |
 
 ## Testing
 

@@ -1,7 +1,7 @@
 import { ISortOption, Strategy } from "./options";
 import { Sorter } from "./sorter";
 import { AlphabeticalStrategy } from "./strategy/alphabetical";
-import { CodeGuideStrategy } from "./strategy/code_guide";
+import { CodeGuideStrategy } from "./strategy/code-guide";
 import { IdiomaticStrategy } from "./strategy/idiomatic";
 import { VuejsStrategy } from "./strategy/vuejs";
 
@@ -10,7 +10,7 @@ const attrs: Array<string> = [];
 
 export function sortAttributes(
     html: string,
-    options: ISortOption = { order: "code_guide" }
+    options: ISortOption = { order: "code-guide" }
 ) {
     const replaced = html.replace(
         /<(?!\/)[-:.\w\d@]+\s(?:"[^"]*"|'[^']*'|[^"'])*?>/g,
@@ -76,7 +76,7 @@ function getSortStrategy(strategy: Strategy) {
     switch (strategy) {
         case "alphabetical":
             return new AlphabeticalStrategy();
-        case "code_guide":
+        case "code-guide":
             return new CodeGuideStrategy();
         case "idiomatic":
             return new IdiomaticStrategy();
@@ -85,6 +85,6 @@ function getSortStrategy(strategy: Strategy) {
     }
 
     throw new Error(
-        `You can specify only [alphabetical|code_guide|idiomatic|vuejs] for sorting order`
+        `You can specify only [alphabetical|code-guide|idiomatic|vuejs] for sorting order`
     );
 }

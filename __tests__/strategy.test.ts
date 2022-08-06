@@ -5,7 +5,7 @@ import util from "./support/util";
 
 describe("strategy test", () => {
     test("code guide", () => {
-        const fixturesDir = path.resolve(__dirname, "fixtures", "code_guide");
+        const fixturesDir = path.resolve(__dirname, "fixtures", "code-guide");
         const fixtureDirEntries = fs.readdirSync(fixturesDir, {
             withFileTypes: true,
         });
@@ -20,7 +20,7 @@ describe("strategy test", () => {
 
             const unformatted = util.unformattedContent(content);
             const result = sortAttributes(unformatted, {
-                order: "code_guide",
+                order: "code-guide",
             });
 
             const expected = util.formattedContent(content);
