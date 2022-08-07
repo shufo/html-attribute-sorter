@@ -2,6 +2,7 @@ import { ISortOption, Strategy } from "./options";
 import { Sorter } from "./sorter";
 import { AlphabeticalStrategy } from "./strategy/alphabetical";
 import { CodeGuideStrategy } from "./strategy/code-guide";
+import { CustomStrategy } from "./strategy/custom";
 import { IdiomaticStrategy } from "./strategy/idiomatic";
 import { VuejsStrategy } from "./strategy/vuejs";
 
@@ -61,7 +62,7 @@ function restoreAttributes(content: string, options: ISortOption) {
 }
 
 function _sortAttributes(content: string, options: ISortOption): string {
-    const strategy = getSortStrategy(options.order);
+    const strategy = getSortStrategy(options);
     const sorter = new Sorter(strategy);
 
     return content.replace(/(?<=<[-:.\w\d]+\s)[^>]*?(?=\/?>)/g, (match) => {
@@ -72,8 +73,8 @@ function _sortAttributes(content: string, options: ISortOption): string {
     });
 }
 
-function getSortStrategy(strategy: Strategy) {
-    switch (strategy) {
+function getSortStrategy(options: ISortOption) {
+    switch (options.order) {
         case "alphabetical":
             return new AlphabeticalStrategy();
         case "code-guide":
@@ -82,6 +83,8 @@ function getSortStrategy(strategy: Strategy) {
             return new IdiomaticStrategy();
         case "vuejs":
             return new VuejsStrategy();
+        case "custom":
+            return new CustomStrategy(options);
     }
 
     throw new Error(

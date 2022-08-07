@@ -56,6 +56,17 @@ const sorted = sortAttributes(
 );
 console.log(sorted);
 // => <img class="img b-30" id="img_10" src="foo">
+
+// custom order
+const sorted = sortAttributes(
+  `<img src="foo" alt="title" class="img b-30" id="img_10">`,
+  {
+    order: "custom",
+    customRegexes: ["id", "class", "sr.+", "alt"], // you can use regex for attritube names
+  }
+);
+console.log(sorted);
+// => <img id="img_10" class="img b-30" src="foo" alt="title" >
 ```
 
 ## API
@@ -76,9 +87,10 @@ export interface ISortOption {
 }
 ```
 
-| key   | value                                                                                                                    |
-| ----- | ------------------------------------------------------------------------------------------------------------------------ |
-| order | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic` or `vuejs`. default: `code-guide` |
+| key           | value                                                                                                                               | required | default      |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| order         | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic`, `custom` or `vuejs`.                        | yes      | `code-guide` |
+| customRegexes | If you set an `order` to `custom`, you can specify custom order regexes for sorting attributes. e.g. `["data-.+", "class", "src"]`. | no       | `[]`         |
 
 ## Testing
 
