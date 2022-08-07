@@ -14,7 +14,7 @@ export class CustomStrategy implements SortStrategy {
             );
         }
 
-        this.orderedAttrsRegex = options.customRegexes ?? [];
+        this.orderedAttrsRegex = options.customRegexes;
     }
 
     sort(attributes: string[]): string[] {
