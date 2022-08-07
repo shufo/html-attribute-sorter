@@ -90,7 +90,7 @@ export interface ISortOption {
 
 | key           | value                                                                                                                               | required | default      |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| order         | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic`, `custom` or `vuejs`.                        | yes      | `code-guide` |
+| order         | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic`, `vuejs` or `custom`.                        | yes      | `code-guide` |
 | customRegexes | If you set an `order` to `custom`, you can specify custom order regexes for sorting attributes. e.g. `["data-.+", "class", "src"]`. | no       | `[]`         |
 
 ## Testing
