@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/shufo/html-attribute-sorter/compare/v0.3.2...v0.4.0) (2022-08-07)
+
+
+### Features
+
+* 🎸 add custom order strategy ([64e5639](https://github.com/shufo/html-attribute-sorter/commit/64e563912ad71a1a06c4551bab5c8930d9335942))
+
 ## [0.3.2](https://github.com/shufo/html-attribute-sorter/compare/v0.3.1...v0.3.2) (2022-08-06)
 
 
