@@ -6,7 +6,7 @@
 
 An html attribute sorter.
 
-You can sort attributes by alphabetical, [code guide](https://codeguide.co/#attribute-order), [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html) or [idiomatic](https://github.com/necolas/idiomatic-html#attribute-order) order.
+You can sort attributes by alphabetical, [code guide](https://codeguide.co/#attribute-order), [vue/attributes-order](https://eslint.vuejs.org/rules/attributes-order.html), [idiomatic](https://github.com/necolas/idiomatic-html#attribute-order) or any custom order using regex.
 
 ## Installation
 
