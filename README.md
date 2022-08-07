@@ -84,6 +84,7 @@ console.log(sorted);
 ```typescript
 export interface ISortOption {
   order: string;
+  customRegexes?: string[];
 }
 ```
 
