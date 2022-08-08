@@ -88,10 +88,10 @@ export interface ISortOption {
 }
 ```
 
-| key           | value                                                                                                                               | required | default      |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
-| order         | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic`, `vuejs` or `custom`.                        | yes      | `code-guide` |
-| customRegexes | If you set an `order` to `custom`, you can specify custom order regexes for sorting attributes. e.g. `["data-.+", "class", "src"]`. | no       | `[]`         |
+| key           | value                                                                                                                                                             | required | default      |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| order         | An order to sort attributes. You can specify `alphabetical`, `code-guide`, `idiomatic`, `vuejs` or `custom`.                                                      | yes      | `code-guide` |
+| customRegexes | When `order` is specified to `custom`, html attributes set here will be used as order. You can use regex for attribute names. e.g. `["data-.+", "class", "src"]`. | no       | `[]`         |
 
 ## Testing
 
