@@ -14,6 +14,7 @@ export function sortAttributes(
     options: ISortOption = { order: "code-guide" }
 ) {
     const replaced = html.replace(
+        // capture html tags
         /<(?!\/)[-:.\w\d@]+\s(?:"[^"]*"|'[^']*'|[^"'])*?>/g,
         (match: string) => {
             return storeTags(match);
@@ -47,6 +48,7 @@ function restoreAttributes(content: string, options: ISortOption) {
         (_match: string, p1: string) => {
             const matched = maps[p1];
             const replaced = matched.replace(
+                // capture attributes
                 /([-:.\w\d]+)\s*=\s*("[^"]*"|'[^']*'|[^"'>\s]+)/g,
                 (match: string, p1: string) => storeAttributes(p1, match)
             );
