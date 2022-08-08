@@ -47,7 +47,7 @@ function restoreAttributes(content: string, options: ISortOption) {
         (_match: string, p1: string) => {
             const matched = maps[p1];
             const replaced = matched.replace(
-                /([-:.\w\d]+)=("[^"]*"|'[^']*'|[^"'])/g,
+                /([-:.\w\d]+)\s*=\s*("[^"]*"|'[^']*'|[^"'>\s])/g,
                 (match: string, p1: string) => storeAttributes(p1, match)
             );
             const sorted = _sortAttributes(replaced, options);
