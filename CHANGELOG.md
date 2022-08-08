@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/shufo/html-attribute-sorter/compare/v0.4.0...v0.4.1) (2022-08-08)
+
+
+### Fixes
+
+* 🐛 does not capture when quotations are not present ([2ca7ec8](https://github.com/shufo/html-attribute-sorter/commit/2ca7ec8d53db113aa6e58a6d45e4017fd2ab0e05))
+* 🐛 not captured if there is a space around equal ([0c7c52e](https://github.com/shufo/html-attribute-sorter/commit/0c7c52ec78779c40c2e858ae29727b1760dbd4ff))
+
 ## [0.4.0](https://github.com/shufo/html-attribute-sorter/compare/v0.3.2...v0.4.0) (2022-08-07)
 
 
