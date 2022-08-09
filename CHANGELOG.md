@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/shufo/html-attribute-sorter/compare/v0.4.1...v0.4.2) (2022-08-09)
+
+
+### Fixes
+
+* 🐛 unexpected reordering in eattributes with no space ([b83fe6d](https://github.com/shufo/html-attribute-sorter/commit/b83fe6daaf16f6cc91ecb613aeca4420be997242))
+
 ## [0.4.1](https://github.com/shufo/html-attribute-sorter/compare/v0.4.0...v0.4.1) (2022-08-08)
 
 
