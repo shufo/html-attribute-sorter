@@ -54,7 +54,7 @@ function restoreAttributes(content: string, options: ISortOption) {
             );
             const sorted = _sortAttributes(replaced, options);
             const restored = sorted.replace(
-                /[-:.\w\d]+_attrs_(\d+)___/g,
+                /[-:.\w\d]+?_attrs_(\d+)___/g,
                 (_match, p1) => attrs[p1]
             );
 
