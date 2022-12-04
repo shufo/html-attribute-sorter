@@ -49,7 +49,7 @@ jobs:
           body: ${{ steps.benchmark.outputs.body }}
 
       - name: Comment PR
-        uses: thollander/actions-comment-pull-request@v1
+        uses: thollander/actions-comment-pull-request@v2
         if: github.event_name == 'pull_request'
         with:
           message: ${{ steps.benchmark.outputs.body }}
