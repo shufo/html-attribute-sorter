@@ -1,4 +1,4 @@
-import { ISortOption } from "src/options";
+import { ISortOption } from "../options";
 import { SortStrategy } from "../sorter";
 
 /**
