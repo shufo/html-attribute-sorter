@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.4.3](https://github.com/shufo/html-attribute-sorter/compare/v0.4.2...v0.4.3) (2022-12-25)
+
+
+### Miscellaneous
+
+* **deps:** update dependency esbuild to ^0.15.0 ([86bf865](https://github.com/shufo/html-attribute-sorter/commit/86bf865d1cfcf460c59a98417779b315ccf232b9))
+* **deps:** update pozil/auto-assign-issue action to v1.10.0 ([577a966](https://github.com/shufo/html-attribute-sorter/commit/577a96642b452783edb41d5cad85c5ed351c5dfb))
+* **deps:** update pozil/auto-assign-issue action to v1.11.0 ([635d4ff](https://github.com/shufo/html-attribute-sorter/commit/635d4ffd81b336994095282aea2009913578c581))
+* **deps:** update thollander/actions-comment-pull-request action to v2 ([bb16552](https://github.com/shufo/html-attribute-sorter/commit/bb16552037307d710bb8764ec72c6aad477b2705))
+
+
+### Fixes
+
+* 🐛 fix: attribute doubles when v-else-if exists ([441c815](https://github.com/shufo/html-attribute-sorter/commit/441c8150697487e0f9de918d9a10a44ffca3d00b))
+
 ## [0.4.2](https://github.com/shufo/html-attribute-sorter/compare/v0.4.1...v0.4.2) (2022-08-09)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "html-attribute-sorter",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "An html attribute sorter",
   "main": "dist/main.js",
   "types": "./dist/types/main.d.ts",
