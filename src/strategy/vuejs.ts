@@ -36,7 +36,9 @@ export class VuejsStrategy implements SortStrategy {
 
         this.headingOrderedAttrsRegex.forEach((regex) => {
             attributes.forEach((attr) => {
-                if (new RegExp(`^${regex}(_attrs_\\d+___)?$`, 'gm').test(attr)) {
+                if (
+                    new RegExp(`^${regex}(_attrs_\\d+___)?$`, "gm").test(attr)
+                ) {
                     head.push(attr);
                 }
             });
