@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.4](https://github.com/shufo/html-attribute-sorter/compare/v0.4.3...v0.4.4) (2025-07-24)
+
+
+### Miscellaneous
+
+* **deps:** bump json5 from 2.2.1 to 2.2.3 ([2eab381](https://github.com/shufo/html-attribute-sorter/commit/2eab381221d4333dc69a503b1b640d69a6f9eaf7))
+* **deps:** update actions/cache action to v4 ([90d31b2](https://github.com/shufo/html-attribute-sorter/commit/90d31b20b40cc6ee5766fcdd097579b88d7df5aa))
+* **deps:** update actions/checkout action to v4 ([18207c3](https://github.com/shufo/html-attribute-sorter/commit/18207c3619b5ff441300017cb4054bb3adfa1c09))
+* **deps:** update actions/setup-node action to v4 ([877c8f9](https://github.com/shufo/html-attribute-sorter/commit/877c8f974dfd416f56af3fb1cb3c585ff93ecbec))
+* **deps:** update peter-evans/commit-comment action to v3 ([2520296](https://github.com/shufo/html-attribute-sorter/commit/252029698e02ffaf62db086726f174246175d435))
+* **deps:** update pozil/auto-assign-issue action to v1.14.0 ([479ab78](https://github.com/shufo/html-attribute-sorter/commit/479ab785da1e5d605f399c4fd45e504c4e7dd590))
+
 ## [0.4.3](https://github.com/shufo/html-attribute-sorter/compare/v0.4.2...v0.4.3) (2022-12-25)
 
 
