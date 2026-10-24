@@ -6,6 +6,8 @@ import { CustomStrategy } from "./strategy/custom";
 import { IdiomaticStrategy } from "./strategy/idiomatic";
 import { VuejsStrategy } from "./strategy/vuejs";
 
+export { sortHtmlAttributes } from "./twig";
+
 const maps: Array<string> = [];
 const attrs: Array<string> = [];
 
